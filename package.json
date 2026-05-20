@@ -1,0 +1,19 @@
+{
+    "name": "mega-sena",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/server.js",
+    "scripts": {
+        "start": "node ./src/server",
+        "dev": "node --watch ./src/server",
+        "db:init": "node src/infra/run-sql.js && node src/infra/init/import-csv.js"
+    },
+    "license": "ISC",
+    "dependencies": {
+        "csv-parser": "^3.2.1",
+        "dotenv": "^17.4.2",
+        "express": "^5.2.1",
+        "papaparse": "^5.5.3",
+        "pg": "^8.20.0"
+    }
+}
